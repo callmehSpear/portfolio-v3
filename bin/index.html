@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ted</title>
+</head>
+<body class="bg-neutral-900 h-screen flex flex-col justify-center items-center space-y-2">
+  <div class="bg-white p-8 rounded-xl max-w-2xl space-y-4 m-4">
+    <div>
+      <h1 class="select-none font-inter text-2xl text-neutral-900 font-semibold">👋 Howdy, I'm Ted</h1>
+      <h2 class="select-none font-inter text-xl text-neutral-500 font-semibold">I'm a 14 year old software engineer from the UK who has a passion for learning and creating.</p>
+    </div>
+    <div class="flex flex-col space-y-2 lg:flex-row lg:space-x-2 lg:space-y-0">
+      <a target="_blank" href="mailto:hi@t3d.uk" class="flex items-center justify-center bg-neutral-800 text-white font-inter font-semibold text-lg px-5 py-2 rounded-xl hover:bg-neutral-900 transition duration-200 ease-in-out">Email</a>
+      <a target="_blank" href="https://discord.com/users/378251417267339264" class="flex items-center justify-center bg-neutral-800 text-white font-inter font-semibold text-lg px-5 py-2 rounded-xl hover:bg-neutral-900 transition duration-200 ease-in-out">Discord</a>
+      <a target="_blank" href="https://twitter.com/teddy_brine" class="flex items-center justify-center bg-neutral-800 text-white font-inter font-semibold text-lg px-5 py-2 rounded-xl hover:bg-neutral-900 transition duration-200 ease-in-out">Twitter</a>
+      <a target="_blank" href="https://github.com/teddybrine" class="flex items-center justify-center bg-neutral-800 text-white font-inter font-semibold text-lg px-5 py-2 rounded-xl hover:bg-neutral-900 transition duration-200 ease-in-out">GitHub</a>
+    </div>
+  </div>
+  <p id="copyright" class="select-none font-inter text-lg text-neutral-200 font-regular">Made by Ted in 2023</p>
+  <script>
+    const date = new Date();
+    const year = date.getFullYear();
+    document.getElementById("copyright").innerHTML = `Made by Ted in ${year}`;
+  </script>
+</body>
+</html>
